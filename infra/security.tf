@@ -1,3 +1,7 @@
+data "aws_vpc" "default" {
+  default = true
+}
+
 resource "aws_security_group" "guess_game_sg" {
   name        = "guess_game_sg"
   description = "Abrir acesso para SSH e HTTP"

@@ -1,0 +1,8 @@
+version: "3"
+
+services:
+  guess_game:
+    build: .
+    container_name: guess_game
+    stdin_open: true
+    tty: true
